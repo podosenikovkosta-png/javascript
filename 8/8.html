@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<style>
+	
+	.box{
+		height: 200px;
+		width: 200px;
+		background-color: red;
+		display: none;
+	}
+	.box1{
+		height: 200px;
+        width: 200px; 
+        background-color: green;
+        display: none;
+	}
+	.box2{
+		height: 200px;
+		width: 200px;
+		background-color: yellow;
+		display: none;
+	}
+</style>
+<body>
+	<div style="display: flex;"><div class="box"></div>
+	<div class="box1"></div>
+	<div class="box2"></div></div>
+	
+	<button class="btn">Click me</button>
+
+	<script>
+		document.querySelector(".btn").onclick = function() {
+			document.querySelector(".box").style.display = "flex";
+			document.querySelector(".box1").style.display = "flex";
+			document.querySelector(".box2").style.display = "flex";
+			
+		}
+	</script>
+</body>
+</html>
